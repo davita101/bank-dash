@@ -1,12 +1,10 @@
-'use client'
 import { Button } from "@/components/ui/button";
-import "./styles/globals.css";
-import Diagram from "@/components/Diagram";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="">
-     <Diagram/>
-     <Button>Tornike</Button>
+     <Button>dasdasd</Button>
     </div>
   );
 }

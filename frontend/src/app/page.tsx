@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
     <div className="">
-     <Button>
-    bro
-     </Button>
     </div>
   );
 }

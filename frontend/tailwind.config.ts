@@ -9,7 +9,18 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		container:{
+			center:true,
+			padding: "1rem",
+			screens: {
+				"2xl": "1400px"
+			}
+		},
   		colors: {
+			"primary100": "#FEAA09",
+			"primary200": "#343C6A",
+			"primary300": "#2D60FF",
+			"secondery": "#FE5C73",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

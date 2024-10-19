@@ -1,3 +1,4 @@
+import IconRender from '@/app/hooks/IconRender'
 import Image from 'next/image'
 import React from 'react'
 import { FaCreditCard, FaLightbulb } from 'react-icons/fa'
@@ -8,45 +9,48 @@ import { MdAccountCircle, MdDesignServices } from 'react-icons/md'
 import { RiSettings5Fill } from 'react-icons/ri'
 
 const Sidebar = () => {
-    const bot = [
+    const icons = [
         {
             name: "Dashboard",
             icon: HiMiniHome
         },
         {
             name: "transactions",
-            icon: GrTransaction 
+            icon: GrTransaction
         },
         {
             name: "Accounts",
-            icon: MdAccountCircle  
+            icon: MdAccountCircle
         },
         {
             name: "Creditcard",
-            icon: FaCreditCard   
+            icon: FaCreditCard
         },
         {
             name: "Loans",
-            icon: FaHandHoldingDollar     
+            icon: FaHandHoldingDollar
         },
         {
             name: "Services",
-            icon: MdDesignServices     
+            icon: MdDesignServices
         },
         {
             name: "Privileges",
-            icon: FaLightbulb      
-        }
+            icon: FaLightbulb
+        },
         {
             name: "Settings",
-            icon: RiSettings5Fill       
+            icon: RiSettings5Fill
         }
     ]
-    // classwork install icons
-  return (
-    <div>
-    </div>
-  )
+    console.log(typeof icons[0].icon)
+    return (
+        <div>
+            {icons.map((item, index) => (
+                <IconRender key={index} src={item.icon} />
+            ))}
+        </div>
+    )
 }
 
 export default Sidebar

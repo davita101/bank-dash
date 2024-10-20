@@ -21,6 +21,7 @@ const config: Config = {
 			"primary200": "#343C6A",
 			"primary300": "#2D60FF",
 			"secondery": "#FE5C73",
+			"primary400":"#B1B1B1",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="container flex justify-between text-primary100">
+    <div className="">
       
       <Sidebar />
     </div>

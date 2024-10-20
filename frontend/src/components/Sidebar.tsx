@@ -1,6 +1,6 @@
 import IconRender from '@/app/hooks/IconRender'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaCreditCard, FaLightbulb } from 'react-icons/fa'
 import { FaCircleDollarToSlot, FaHandHoldingDollar } from 'react-icons/fa6'
 import { GrTransaction } from 'react-icons/gr'
@@ -9,6 +9,12 @@ import { MdAccountCircle, MdDesignServices } from 'react-icons/md'
 import { RiSettings5Fill } from 'react-icons/ri'
 
 const Sidebar = () => {
+    const [move, setMove] = useState(true)
+
+    const setActive = (index) => {
+        setMove(index)
+    }
+
     const icons = [
         {
             name: "Dashboard",
@@ -24,7 +30,7 @@ const Sidebar = () => {
         },
         {
             name: "Investments",
-            icon: FaCircleDollarToSlot 
+            icon: FaCircleDollarToSlot
         },
         {
             name: "Creditcard",
@@ -49,14 +55,18 @@ const Sidebar = () => {
     ]
     console.log(typeof icons[0].icon)
     return (
-        <div className='bg-white text-primary400  w-[221px] h-[554px] '>
+        <div className=' text-primary400 bg-white   w-[221px] h-[554px] '>
             {icons.map((item, index) => (
 
-                    <div className='flex gap-3 w-[189px] h-[60px] pl-[41px] justify-start items-center text-start '>
-                        
-                        <IconRender src={item.icon}  />
+                <div onClick={() => setActive(index)} className={`flex gap-3 ${move == index && "text-primary300"} justify-between font-medium w-[189px] cursor-pointer  h-[60px] `}>
+                    
+                    <div className={`w-[6px] ${move == index && " bg-blue-800"} rounded-r-3xl h-full`} />
+                    <div className='flex gap-5 font-medium w-[189px] cursor-pointer  h-[60px] items-center  text-start'>
+                        <IconRender  src={item.icon} />
                         <p>{item.name}</p>
+
                     </div>
+                </div>
 
 
             ))}

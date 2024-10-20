@@ -10,7 +10,7 @@ const Img = src
 const P = text
   return (
     <div className='w-[25px] h-[25px] flex justify-center items-center'>
-      <Img />
+      <Img  />
     </div>
   )
 }

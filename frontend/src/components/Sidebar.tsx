@@ -59,7 +59,7 @@ const Sidebar = () => {
     return (
         // clasworck
         <div className=' text-primary400 bg-white max-sm:hidden'>
-            <div className='ml-[44px] mb-[100px] mt-[31px] cursor-pointer'>
+            <div className='lg:ml-[44px] sm:ml-[32px] lg:mb-[100px] sm:mb-[38px] mt-[31px] cursor-pointer'>
                 <Image src={FullLogo} alt='' />
             </div>
             {icons.map((item, index) => (

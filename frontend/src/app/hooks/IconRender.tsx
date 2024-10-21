@@ -2,14 +2,14 @@ import React from 'react'
 
 interface MyICons {
     src: React.FC, // function 
+    className: String
 }
 
 
-const IconRender: React.FC<MyICons> = ({src},{text}) => {
+const IconRender: React.FC<MyICons> = ({src, className}) => {
 const Img = src
-const P = text
   return (
-    <div className='w-[25px] h-[25px] flex justify-center items-center'>
+    <div className={`${className}`}>
       <Img  />
     </div>
   )

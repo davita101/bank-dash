@@ -8,8 +8,10 @@ import { HiMiniHome } from 'react-icons/hi2'
 import { MdAccountCircle, MdDesignServices } from 'react-icons/md'
 import { RiSettings5Fill } from 'react-icons/ri'
 
+import FullLogo from "../app/assets/mainLogo/FullLogo.svg"
+
 const Sidebar = () => {
-    const [move, setMove] = useState(true)
+    const [move, setMove] = useState(0)
 
     const setActive = (index) => {
         setMove(index)
@@ -21,7 +23,7 @@ const Sidebar = () => {
             icon: HiMiniHome
         },
         {
-            name: "transactions",
+            name: "Transactions",
             icon: GrTransaction
         },
         {
@@ -55,20 +57,19 @@ const Sidebar = () => {
     ]
     console.log(typeof icons[0].icon)
     return (
-        <div className=' text-primary400 bg-white   w-[221px] h-[554px] '>
+        // clasworck
+        <div className=' text-primary400 bg-white max-sm:hidden'>
+            <div className='ml-[44px] mb-[100px] mt-[31px] cursor-pointer'>
+                <Image src={FullLogo} alt='' />
+            </div>
             {icons.map((item, index) => (
-
-                <div onClick={() => setActive(index)} className={`flex gap-3 ${move == index && "text-primary300"} justify-between font-medium w-[189px] cursor-pointer  h-[60px] `}>
-                    
-                    <div className={`w-[6px] ${move == index && " bg-blue-800"} rounded-r-3xl h-full`} />
-                    <div className='flex gap-5 font-medium w-[189px] cursor-pointer  h-[60px] items-center  text-start'>
-                        <IconRender  src={item.icon} />
-                        <p>{item.name}</p>
-
+                <div key={`_sidebar--${index}`} onClick={() => setActive(index)} className={`flex lg:gap-[38px] sm:gap-[25px] ${move == index && "text-primary--300"} font-medium cursor-pointer`}>
+                    <div className={`w-[6px] ${(move === index) && "bg-primary--300"} rounded-r-[10px] h-[60px]`} />
+                    <div className='flex w-full gap-[26px] font-medium cursor-pointer h-[60px] items-center'>
+                        <IconRender src={item.icon} className={"text-[30px]"} />
+                        <h3 className='capitalize text-heading--400'>{item.name}</h3>
                     </div>
                 </div>
-
-
             ))}
         </div>
     )

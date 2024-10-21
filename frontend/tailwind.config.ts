@@ -13,13 +13,22 @@ const config: Config = {
 			center:true,
 			padding: "1rem",
 			screens: {
-				"2xl": "1400px"
+				"2xl": "1440px"
 			}
 		},
+		fontSize: {
+			"heading--100": "28px",
+			"heading--200": "22px",
+			"heading--300": "18px",
+			"heading--400": "18px",
+			"heading--500": "20px",
+			"body--100": "16px",
+			"body--200": "15px",
+		},
   		colors: {
-			"primary100": "#FEAA09",
-			"primary200": "#343C6A",
-			"primary300": "#2D60FF",
+			"primary--100": "#FEAA09",
+			"primary--200": "#343C6A",
+			"primary--300": "#2D60FF",
 			"secondery": "#FE5C73",
 			"primary400":"#B1B1B1",
   			background: 'hsl(var(--background))',

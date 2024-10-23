@@ -1,4 +1,3 @@
-import IconRender from '@/app/hooks/IconRender'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { FaCreditCard, FaLightbulb } from 'react-icons/fa'
@@ -8,12 +7,12 @@ import { HiMiniHome } from 'react-icons/hi2'
 import { MdAccountCircle, MdDesignServices } from 'react-icons/md'
 import { RiSettings5Fill } from 'react-icons/ri'
 
-import FullLogo from "../app/assets/mainLogo/FullLogo.svg"
+import IconRender from '../hooks/icon-render'
 
 const Sidebar = () => {
-    const [move, setMove] = useState(0)
+    const [move, setMove] = useState<number>(0)
 
-    const setActive = (index) => {
+    const setActive = (index: number) => {
         setMove(index)
     }
 
@@ -60,7 +59,7 @@ const Sidebar = () => {
         // clasworck
         <div className=' text-primary400 bg-white max-sm:hidden'>
             <div className='lg:ml-[44px] sm:ml-[32px] lg:mb-[100px] sm:mb-[38px] mt-[31px] cursor-pointer'>
-                <Image src={FullLogo} alt='' />
+                <Image src={''} alt='' />
             </div>
             {icons.map((item, index) => (
                 <div key={`_sidebar--${index}`} onClick={() => setActive(index)} className={`flex lg:gap-[38px] sm:gap-[25px] ${move == index && "text-primary--300"} font-medium cursor-pointer`}>

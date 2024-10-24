@@ -21,6 +21,7 @@ const config: Config = {
     			'heading--300': '18px',
     			'heading--400': '18px',
     			'heading--500': '20px',
+    			'heading--600': '28px',
     			'body--100': '16px',
     			'body--200': '15px'
     		},
@@ -28,6 +29,10 @@ const config: Config = {
     			'primary--100': '#FEAA09',
     			'primary--200': '#343C6A',
     			'primary--300': '#2D60FF',
+    			'primary--400': '#F5F7FA',
+    			'primary--600': '#FE5C73',
+    			'primary--700': '#718EBF',
+				
     			secondery: '#FE5C73',
     			primary400: '#B1B1B1',
     			background: 'hsl(var(--background))',

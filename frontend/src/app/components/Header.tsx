@@ -2,7 +2,7 @@
 import React from 'react'
 import { FiSettings } from "react-icons/fi";
 import { PiBellRinging } from "react-icons/pi";
-import Mask  from "../assets/mainLogo/headeer/Mask.svg"
+import Mask from "../assets/mainLogo/headeer/Mask.svg"
 import { CiSearch } from "react-icons/ci";
 import Image from 'next/image';
 import { UserButton } from '@clerk/nextjs';
@@ -28,7 +28,8 @@ const Header = () => {
 				{/* <SignOutButton/> */}
 				{/* <UserButton /> */}
 				<Image className='w-[60px] h-[60px] rounded-full' src={Mask} alt="" />
-{/* classworck buld resposive */}
+				{/* classworck buld resposive */}
+				{/* homeworck build full header renspoinisve */}
 			</div>
 
 		</div>

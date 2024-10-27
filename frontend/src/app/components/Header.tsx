@@ -38,7 +38,7 @@ const Header = () => {
 				<Image className='lg:w-[60px] max-sm:hidden sm:w-[45px] lg:h-[60px] sm:h-[45px] rounded-full' src={Mask} alt="" />
 
 			</div>
-			<div className='flex sm:hidden   max-sm:w-[325px] max-sm:h-[40px] max-sm:justify-start max-sm:pl-[19px]   rounded-3xl bg-primary--400 gap-5 justify-center items-center '>
+			<div className='flex sm:hidden py-[12px]  max-sm:w-[325px] max-sm: max-sm:justify-start max-sm:pl-[19px]   rounded-3xl bg-primary--400 gap-5 justify-center items-center '>
 				<CiSearch className='lg:w-[20px] sm:w-[16px] lg:h-[20px] sm:h-[20px] bg-primary--400' />
 				<input type="text" placeholder='Search for something' className=' outline-none placeholder:text-slate-400 bg-primary--400    border-primary--400  ' />
 			</div>

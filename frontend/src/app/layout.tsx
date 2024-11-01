@@ -1,7 +1,7 @@
 "use client"
-import { AppSidebar } from "./components/app-sidebar";
-import Header from "./components/Header";
-import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import Header from "@/components/Header";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import "./styles/globals.css"
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
@@ -11,18 +11,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
-        <body>
-          <SidebarProvider  >
-            <AppSidebar />
-            <SidebarTrigger />
-            <div className="flex flex-col w-full lg:pl-[40px] pl-[0px]">
+    <html lang="en">
+      <body>
+        <SidebarProvider >
+          <AppSidebar />
+          <div className=" flex flex-col w-full  bg-secondary100/35">
+            <header className="sm:px-[30px] px-[25px] bg-white">
               <Header />
+            </header>
+            <main className="sm:px-[30px] px-[25px]">
               {children}
-            </div>
-          </SidebarProvider>
-        </body>
-      </html >
+            </main>
+          </div>
+        </SidebarProvider>
+      </body>
+    </html >
 
   );
 }

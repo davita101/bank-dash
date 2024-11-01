@@ -33,11 +33,14 @@ const config: Config = {
     			'primary--400': '#F5F7FA',
     			'primary--600': '#FE5C73',
     			'primary--700': '#718EBF',
+				'primary--800': "#E6EFF5",
 				
     			secondery: '#FE5C73',
-    			primary400: '#B1B1B1',
+    			secondary100: "#DFE5EE",
+				primary400: '#B1B1B1',
     			background: 'hsl(var(--background))',
     			foreground: 'hsl(var(--foreground))',
+
     			card: {
     				DEFAULT: 'hsl(var(--card))',
     				foreground: 'hsl(var(--card-foreground))'

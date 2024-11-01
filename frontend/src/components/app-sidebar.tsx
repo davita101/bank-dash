@@ -15,13 +15,14 @@ import { MdAccountCircle, MdDesignServices } from "react-icons/md"
 import { FaCircleDollarToSlot, FaHandHoldingDollar } from "react-icons/fa6"
 import { GrTransaction } from "react-icons/gr"
 import { HiMiniHome } from "react-icons/hi2"
-import IconRender from "../hooks/icon-render"
+import IconRender from "./hooks/icon-render"
 
 // This is sample data.
 const data = {
   versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
   navMain: [
     {
+      link: '/dashboard',
       name: "Dashboard",
       icon: HiMiniHome
     },
@@ -59,8 +60,9 @@ const data = {
     }
   ]
 }
-import FullLogo from "../assets/mainLogo/FullLogo.svg"
+import FullLogo from "../app/assets/mainLogo/FullLogo.svg"
 import Image from "next/image"
+import Link from "next/link"
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const [move, setMove] = React.useState<number>(0)
 
@@ -68,8 +70,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     setMove(index)
   }
   return (
-    <Sidebar {...props} className="text-primary400 max-sm:hidden">
-      <SidebarContent>
+    <Sidebar {...props} className=" text-primary400 max-sm:hidden">
+      <SidebarContent className="bg-white">
         <div className='lg:ml-[44px] sm:ml-[32px] lg:mb-[100px] sm:mb-[38px] ml-[25px] my-[31px] cursor-pointer'>
           <Image src={FullLogo} alt='BankDash logo' />
         </div>
@@ -78,8 +80,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <div key={`_sidebar--${index}`} onClick={() => setActive(index)} className={`relative flex lg:gap-[38px] sm:gap-[25px] gap-[20px] ${move == index && "text-primary--300"} font-medium cursor-pointer`}>
               <div className={`w-[6px] ${(move === index) && "bg-primary--300"} rounded-r-[10px] h-[60px]`} />
               <div className='flex w-full gap-[26px] font-medium cursor-pointer h-[60px] items-center'>
-                <IconRender src={item.icon} className={"text-[30px]"} />
-                <h3 className='capitalize text-heading--400'>{item.name}</h3>
+                <IconRender src={item.icon} className={"text-[30px] "} />
+                <Link href={item.link || ""}><h3 className='capitalize text-heading--400'>{item.name}</h3></Link>
               </div>
               {/* ეს უნდა დავამტოთ  */}
               <SidebarTrigger className="sm:hidden absolute w-full h-full opacity-0"/>

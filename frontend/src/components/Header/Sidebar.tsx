@@ -7,7 +7,7 @@ import { HiMiniHome } from 'react-icons/hi2'
 import { MdAccountCircle, MdDesignServices } from 'react-icons/md'
 import { RiSettings5Fill } from 'react-icons/ri'
 
-import IconRender from './hooks/icon-render'
+import IconRender from '../hooks/icon-render'
 import Link from 'next/link'
 
 const Sidebar = () => {

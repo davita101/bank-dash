@@ -1,21 +1,19 @@
 import * as React from "react"
 
-import { SearchForm } from "./search-form"
-import { VersionSwitcher } from "./version-switcher"
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarRail,
   SidebarTrigger,
-} from "./ui/sidebar"
+} from "../ui/sidebar"
 import { RiSettings5Fill } from "react-icons/ri"
 import { FaCreditCard, FaLightbulb } from "react-icons/fa"
 import { MdAccountCircle, MdDesignServices } from "react-icons/md"
 import { FaCircleDollarToSlot, FaHandHoldingDollar } from "react-icons/fa6"
 import { GrTransaction } from "react-icons/gr"
 import { HiMiniHome } from "react-icons/hi2"
-import IconRender from "./hooks/icon-render"
+import IconRender from "../hooks/icon-render"
 
 // This is sample data.
 const data = {
@@ -60,7 +58,7 @@ const data = {
     }
   ]
 }
-import FullLogo from "../app/assets/mainLogo/FullLogo.svg"
+import FullLogo from "../../app/assets/mainLogo/FullLogo.svg"
 import Image from "next/image"
 import Link from "next/link"
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {

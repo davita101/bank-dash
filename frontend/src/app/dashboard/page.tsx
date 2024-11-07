@@ -1,4 +1,4 @@
-import { Chart } from "@/components/chart";
+import { Chart } from "@/components/Dashboard/chart";
 
 export default function Page() {
     return (

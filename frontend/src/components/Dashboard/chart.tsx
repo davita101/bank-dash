@@ -22,7 +22,7 @@ export const description = "A multiple bar chart"
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
+  { month: "February", desktop: 480, mobile: 200 },
   { month: "March", desktop: 237, mobile: 120 },
   { month: "April", desktop: 73, mobile: 190 },
   { month: "May", desktop: 209, mobile: 130 },
@@ -32,33 +32,32 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "hsl(var(--chart-1))",
+    color: "#1814F3",
   },
   mobile: {
     label: "Mobile",
-    color: "hsl(var(--chart-2))",
+    color: "#16DBCC",
   },
 } satisfies ChartConfig
 
 export function Chart() {
   return (
-    <Card>
+    <Card >
       <CardHeader>
         <CardTitle>Bar Chart - Multiple</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig} className="h-[200px] w-full">
+        <ChartContainer config={chartConfig} className="h-[322px] w-full">
           <BarChart accessibilityLayer data={chartData}>
-            <CartesianGrid vertical={false} />
+            <CartesianGrid vertical={false}  />
             
             <YAxis
-              dataKey="month"
-              type="category"
               tickLine={false}
-              tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) => value.slice(0, 3)}
+              tickMargin={10}
+              domain={[0,500]} 
+              ticks={[0,100,200,300,400,500]}
             />
 
             <XAxis
@@ -75,7 +74,7 @@ export function Chart() {
               content={<ChartTooltipContent indicator="dashed" />}
             />
             <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} barSize={10} />
-            {/* <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4}  barSize={10}/> */}
+            <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4}  barSize={10}/>
           </BarChart>
         </ChartContainer>
       </CardContent>

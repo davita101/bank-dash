@@ -23,6 +23,7 @@ const config: Config = {
     			'heading--500': '20px',
     			'heading--600': '25px',
     			'heading--700': '28px',
+    			'heading--800': '12px',
     			'body--100': '16px',
     			'body--200': '15px'
     		},
@@ -34,6 +35,11 @@ const config: Config = {
     			'primary--600': '#FE5C73',
     			'primary--700': '#718EBF',
 				'primary--800': "#E6EFF5",
+				'primary--900': "#4C49ED",
+				'primary--001': "#FFFFFF80",
+				'primary--002': "#FFFFFFB2",
+				'primary--003': "#FFFFFF",
+				
 				
     			secondery: '#FE5C73',
     			secondary100: "#DFE5EE",

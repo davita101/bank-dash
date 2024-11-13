@@ -37,9 +37,7 @@ const chartConfig = {
 
 export function Balance() {
   return (
-    <div>
-      <h2 className="text-heading--200 font-semibold text-primary--200 ">Balance History</h2>
-      
+    <div>      
       <Card>
         <CardHeader>
         </CardHeader>

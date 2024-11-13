@@ -2,6 +2,7 @@
 import { Balance } from "@/components/Dashboard/balance";
 import { Chart } from "@/components/Dashboard/chart";
 import CreditCard from "@/components/Dashboard/creditcard";
+import Creditcard_white from "@/components/Dashboard/creditcard_white";
 import { Ovali } from "@/components/Dashboard/ovali";
 
 import { Circle,  PieChart } from "lucide-react";
@@ -15,7 +16,9 @@ export default function Page() {
                     <div className="aspect-video rounded-xl w-[350px] h-[235px]" >
                         <CreditCard />
                     </div>
-                    <div className="aspect-video rounded-xl bg-red-500/50" />
+                    <div className="aspect-video rounded-xl w-[350px] h-[235px] " >
+                        <Creditcard_white />
+                    </div>
                     <div className="aspect-video rounded-xl bg-red-500/50" />
                     <div className=" rounded-xl md:col-span-2" >
 

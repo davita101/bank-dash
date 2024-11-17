@@ -15,6 +15,7 @@
   background-image: linear-gradient(to right top, #4c49ed, #413eef, #3431f1, #2421f3, #0a06f4);
 }
 
+
 @layer base {
   :root {
     --sidebar-background: 0 0% 98%;

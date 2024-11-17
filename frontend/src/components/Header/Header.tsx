@@ -20,7 +20,7 @@ const Header = () => {
 					<SidebarTrigger className=' pt-1' />
 					<h2 className='font-semibold mx-auto text-primary--200 lg:text-heading--700 max-sm:text-heading--600 sm:text-heading--600'>Overview</h2>
 				</div>
-				<SignInButton></SignInButton>
+				{/* <SignInButton></SignInButton> */}
 
 				<Image className='lg:w-[60px] sm:hidden sm:w-[45px] lg:h-[60px] sm:h-[45px] w-[35px] max-sm:absolute right-0 rounded-full' src={Mask} alt="" />
 			</div>
@@ -36,7 +36,7 @@ const Header = () => {
 					<PiBellRinging className='lg:w-[25px] sm:w-[18px] lg:h-[25px] sm:h-[18px]' />
 				</div>
 				<div className='lg:w-[60px] flex items-center justify-center text-[50px] max-sm:hidden sm:w-[45px] lg:h-[60px] sm:h-[45px] rounded-full'>
-					<UserButton   />
+					{/* <UserButton   /> */}
 				
 				</div>
 

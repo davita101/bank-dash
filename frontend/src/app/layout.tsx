@@ -11,7 +11,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider>
+        // <ClerkProvider>
             <html lang="en">
                 <body>
                     <SidebarProvider >
@@ -27,6 +27,6 @@ export default function RootLayout({
                     </SidebarProvider>
                 </body>
             </html >
-        </ClerkProvider>
+        // </ClerkProvider>
     );
 }

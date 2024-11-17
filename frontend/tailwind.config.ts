@@ -40,6 +40,13 @@ const config: Config = {
 				'primary--001': "#FFFFFF80",
 				'primary--002': "#FFFFFFB2",
 				'primary--003': "#FFFFFF",
+				'primary--004': "#DCFAF8",
+				'primary--005': "#E7EDFF",
+				'primary--006': "#FFF5D9",
+				'primary--007': "#232323",
+				'primary--008': "#41D4A8",
+				'primary--009': "#FF4B4A",
+				
 				
 				
     			secondery: '#FE5C73',

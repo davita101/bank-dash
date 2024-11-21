@@ -1,9 +1,9 @@
-// import { SignUp } from "@clerk/nextjs";
+import { SignUp } from "@clerk/nextjs";
 
-// export default function Pages() {
-//   return (
-//     <div>
-//       <SignUp/>
-//     </div>
-//   )
-// }
+export default function Pages() {
+  return (
+    <div>
+      <SignUp/>
+    </div>
+  )
+}

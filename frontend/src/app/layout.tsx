@@ -11,10 +11,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        // <ClerkProvider>
+        <ClerkProvider>
             <html lang="en">
                 <body>
-                    <SidebarProvider >
+                    <SidebarProvider>
                         <AppSidebar />
                         <div className=" flex flex-col w-full  bg-secondary100/35">
                             <header className="sm:px-[30px] px-[25px] bg-white">
@@ -27,6 +27,6 @@ export default function RootLayout({
                     </SidebarProvider>
                 </body>
             </html >
-        // </ClerkProvider>
+        </ClerkProvider>
     );
 }

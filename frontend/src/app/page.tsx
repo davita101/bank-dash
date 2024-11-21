@@ -1,28 +1,34 @@
-"use client"
+// "use client";
 
 import { Button } from "@/components/ui/button";
-
-import { SignInButton, SignUpButton, useAuth } from "@clerk/nextjs";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
+export default async function SignInSignUpButtons() {
+  const userId = (await auth()).userId
 
-export default function  Home() {
-  // const {userId} = useAuth()
-  // const {userId} = auth()
+  if (userId !== null) return redirect("/dashboard")
 
-  // if (userId != null ) redirect("/dashboard")
+  
   return (
-    <div className="flex">
-      {/* <Button>
-        <SignInButton />
-      </Button>
-      <Button>
-        <SignUpButton />
-      </Button> */}
+    <div className="flex justify-center items-center h-[80vh]">
+      <Card>
+        <CardHeader>
+          <CardTitle>Auth your account</CardTitle>
+          <CardDescription>!t is important!</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button variant={"outline"} asChild>
+            <SignInButton />
+          </Button>
+          <Button variant={"outline"} asChild>
+            <SignUpButton />
+          </Button>
+        </CardContent>
+      </Card>
+
     </div>
   );
 }
-
-// homework --- classworck
-// install chart6 --- clerk

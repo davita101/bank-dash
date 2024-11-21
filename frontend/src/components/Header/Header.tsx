@@ -2,12 +2,9 @@
 import React from 'react'
 import { FiSettings } from "react-icons/fi";
 import { PiBellRinging } from "react-icons/pi";
-import Mask from "../../app/assets/mainLogo/headeer/Mask.svg"
 import { CiSearch } from "react-icons/ci";
-import Image from 'next/image';
 import { SidebarTrigger } from '../ui/sidebar';
 import { UserButton } from '@clerk/nextjs';
-import { SignIn, SignInButton } from '@clerk/clerk-react';
 
 
 const Header = () => {
@@ -20,9 +17,9 @@ const Header = () => {
 					<SidebarTrigger className=' pt-1' />
 					<h2 className='font-semibold mx-auto text-primary--200 lg:text-heading--700 max-sm:text-heading--600 sm:text-heading--600'>Overview</h2>
 				</div>
-				{/* <SignInButton></SignInButton> */}
 
-				<Image className='lg:w-[60px] sm:hidden sm:w-[45px] lg:h-[60px] sm:h-[45px] w-[35px] max-sm:absolute right-0 rounded-full' src={Mask} alt="" />
+				<UserButton />
+
 			</div>
 			<div className='flex justify-center items-center gap-[30px] rounded-3xl'>
 				<div className='flex max-sm:hidden  w-[255px] lg:h-[50px] sm:h-[40px] rounded-3xl bg-primary--400 gap-5 justify-center items-center '>
@@ -35,9 +32,8 @@ const Header = () => {
 				<div className=' lg:w-[50px] sm:w-[40px] lg:h-[50px] sm:h-[40px] max-sm:hidden flex justify-center items-center  text-primary--600 bg-primary--400 rounded-full'>
 					<PiBellRinging className='lg:w-[25px] sm:w-[18px] lg:h-[25px] sm:h-[18px]' />
 				</div>
-				<div className='lg:w-[60px] flex items-center justify-center text-[50px] max-sm:hidden sm:w-[45px] lg:h-[60px] sm:h-[45px] rounded-full'>
-					{/* <UserButton   /> */}
-				
+				<div className='flex items-center justify-center  max-sm:hidden  rounded-full'>
+					<UserButton />
 				</div>
 
 			</div>

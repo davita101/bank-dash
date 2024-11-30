@@ -51,12 +51,12 @@ function Recent() {
                                     <Image className=' w-[48px] h-[48px]' src={item.icon} alt={"deposit type"} />
                                 </div>
                                 <div className=''>
-                                    <h4 className='text-body--100 text-primary--007 font-medium'>{item.depositType}</h4>
-                                    <p className='text-body--200 font-normal text-primary--700'>{item.updateTime}</p>
+                                    <h4 className='lg:text-body--100 text-heading--002 text-primary--007 font-medium '>{item.depositType}</h4>
+                                    <p className='lg:text-body--200 text-heading--800 font-normal text-primary--700'>{item.updateTime}</p>
                                 </div>
                             </div>
                             <div className='pr-[30px]  flex justify-center items-center '>
-                                <h4 className={`font-medium ${item.isIncrease ? "text-primary--008" : "text-primary--009"}`}>{item.isIncrease ? `+$${item.deposit}` : `-$${item.deposit}`}</h4>
+                                <h4 className={`lg:text-body--100 text-heading--900 font-medium ${item.isIncrease ? "text-primary--008" : "text-primary--009"}`}>{item.isIncrease ? `+$${item.deposit}` : `-$${item.deposit}`}</h4>
                             </div>
                         </div>
                     ))}

@@ -25,6 +25,9 @@ const config: Config = {
     			'heading--600': '25px',
     			'heading--700': '28px',
     			'heading--800': '12px',
+    			'heading--900': '11px',
+    			'heading--001': '10px',
+    			'heading--002': '13px',
     			'body--100': '16px',
     			'body--200': '15px'
     		},

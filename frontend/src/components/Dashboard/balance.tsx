@@ -42,7 +42,7 @@ export function Balance() {
         <CardHeader>
         </CardHeader>
         <CardContent>
-          <ChartContainer config={chartConfig} className="h-[276px] w-full">
+          <ChartContainer config={chartConfig} className="lg:h-[276px] w-full">
             <AreaChart
 
               accessibilityLayer

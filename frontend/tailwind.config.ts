@@ -49,6 +49,8 @@ const config: Config = {
 				'primary--007': "#232323",
 				'primary--008': "#41D4A8",
 				'primary--009': "#FF4B4A",
+				'primary--010': "#16DBCC",
+				'primary--011': "#FF82AC",
 				
 				
 				

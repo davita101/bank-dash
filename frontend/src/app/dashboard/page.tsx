@@ -193,7 +193,7 @@ export default function Page() {
                         <h2 className="text-heading--200 font-semibold text-primary--200">Recent Transaction</h2>
                         <Recent />
                     </div>
-                    <div className=" rounded-xl md:col-span-2" >
+                    <div className=" rounded-xl md:col-span-2 col-span-2" >
                         <Chart />
                     </div>
                     <div className="  rounded-xl " >

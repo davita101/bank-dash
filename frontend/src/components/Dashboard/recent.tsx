@@ -54,7 +54,7 @@ function Recent() {
                                     <h4 className='lg:text-body--100 text-heading--002 text-primary--007 font-medium '>{item.depositType}</h4>
                                     <p className='lg:text-body--200 text-heading--800 font-normal text-primary--700'>{item.updateTime}</p>
                                 </div>
-                            v</div>
+                            </div>
                             <div className='pr-[30px]  flex justify-center items-center '>
                                 <h4 className={`lg:text-body--100 text-heading--900 font-medium ${item.isIncrease ? "text-primary--008" : "text-primary--009"}`}>{item.isIncrease ? `+$${item.deposit}` : `-$${item.deposit}`}</h4>
                             </div>

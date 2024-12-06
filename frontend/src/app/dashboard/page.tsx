@@ -4,6 +4,7 @@ import { Chart } from "@/components/Dashboard/chart";
 import CreditCard from "@/components/Dashboard/creditcard";
 import { Ovali } from "@/components/Dashboard/ovali";
 import Recent from "@/components/Dashboard/recent";
+import Transfer from "@/components/Dashboard/transfer";
 
 export default function Page() {
     interface Transition {
@@ -200,9 +201,11 @@ export default function Page() {
                         <Ovali />
                     </div>
                 </div>
-                <div className="grid auto-rows-min gap-[1rem] grid-cols-1 md:grid-cols-3">
-                    <div className="w-full h-[244px] rounded-xl bg-red-500/50" />
-                    <div className="w-full md:col-span-2 rounded-xl " >
+                <div className="grid  gap-[1rem] grid-cols-1 md:grid-cols-5">
+                    <div className="w-full h-full pb-[49px] md:col-span-2  rounded-xl" >
+                        <Transfer />
+                    </div>
+                    <div className="w-full md:col-span-3 rounded-xl " >
                         <Balance />
                     </div>
                 </div>

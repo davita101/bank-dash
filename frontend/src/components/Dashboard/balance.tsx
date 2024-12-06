@@ -37,12 +37,14 @@ const chartConfig = {
 
 export function Balance() {
   return (
-    <div>      
-      <Card>
+    <div>
+      <h2 className="text-heading--200 font-semibold text-primary--200 mb-[16px] ">Expense Statistics</h2>
+
+      <Card className="">
         <CardHeader>
         </CardHeader>
         <CardContent>
-          <ChartContainer config={chartConfig} className="lg:h-[276px] w-full">
+          <ChartContainer config={chartConfig} className=" w-full pb-[30px] lg:h-[276px] md:h-[220px] h-[223px]">
             <AreaChart
 
               accessibilityLayer

@@ -18,8 +18,6 @@ const Header = () => {
 					<h2 className='font-semibold mx-auto text-primary--200 lg:text-heading--700 max-sm:text-heading--600 sm:text-heading--600'>Overview</h2>
 				</div>
 
-				<UserButton />
-
 			</div>
 			<div className='flex justify-center items-center gap-[30px] rounded-3xl'>
 				<div className='flex max-sm:hidden  w-[255px] lg:h-[50px] sm:h-[40px] rounded-3xl bg-primary--400 gap-5 justify-center items-center '>
@@ -32,8 +30,8 @@ const Header = () => {
 				<div className=' lg:w-[50px] sm:w-[40px] lg:h-[50px] sm:h-[40px] max-sm:hidden flex justify-center items-center  text-primary--600 bg-primary--400 rounded-full'>
 					<PiBellRinging className='lg:w-[25px] sm:w-[18px] lg:h-[25px] sm:h-[18px]' />
 				</div>
-				<div className='flex items-center justify-center  max-sm:hidden  rounded-full'>
-					<UserButton />
+				<div className='flex items-center justify-center  max-sm:hidden  rounded-full w-[50px]'>
+					<UserButton appearance={{ elements: { userButtonAvatarBox: "size-full" } }} />
 				</div>
 
 			</div>

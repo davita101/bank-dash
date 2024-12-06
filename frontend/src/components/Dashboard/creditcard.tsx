@@ -120,7 +120,7 @@ export default function CreditCard(
         
     }
     return (
-        <div className=' overflow-hidden'>
+            <div className=' overflow-hidden max-sm:w-[350px]'>
             <div className='rounded-3xl overflow-hidden'>
                 <div className='h-full main_card px-[25px] pb-[35px]'>
                     <div className='flex justify-between pt-[26px]'>

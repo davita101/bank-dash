@@ -155,7 +155,7 @@ export default function Page() {
             },
             preferences: {
                 theme: "dark",
-                defaultCurrency: "usd",
+                defaultCurrency: "gel   ",
                 timezone: "GMT+4"
             }
         }
@@ -170,7 +170,7 @@ export default function Page() {
                             <h2 className="text-heading--200 font-semibold text-primary--200">see all</h2>
                         </div>
 
-                        <div className="flex gap-[25px]">
+                        <div className="flex gap-[25px] overflow-x-scroll">
                             {Object.keys(users[0].cards).map((cardKey) => {
                                 const card = users[0].cards[cardKey]; // Get the card object dynamically based on the key
 

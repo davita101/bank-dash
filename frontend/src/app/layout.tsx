@@ -17,10 +17,10 @@ export default function RootLayout({
                     <SidebarProvider>
                         <AppSidebar />
                         <div className=" flex flex-col w-full  bg-secondary100/35">
-                            <header className="sm:px-[30px] px-[25px] bg-white">
+                            <header className="sm:px-[20px] px-[25px] bg-white">
                                 <Header />
                             </header>
-                            <main className="sm:px-[30px] px-[25px]">
+                            <main className="sm:px-[20px] px-[15px]">
                                 {children}
                             </main>
                         </div>

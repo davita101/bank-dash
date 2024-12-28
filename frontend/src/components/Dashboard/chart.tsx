@@ -69,7 +69,7 @@ export function Chart() {
 
                             <YAxis
                                 tickLine={false}
-                                axisLine={false}
+                                    axisLine={false}
                                 tickMargin={10}
                                 domain={[0, 500]}
                                 ticks={[0, 100, 200, 300, 400, 500]}

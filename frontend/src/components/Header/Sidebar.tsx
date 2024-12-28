@@ -74,7 +74,7 @@ const Sidebar = () => {
                     <div className={`w-[6px] ${(move === index) && "bg-primary--300"} rounded-r-[10px] h-[60px]`} />
                     <div className='flex w-full gap-[26px] font-medium cursor-pointer h-[60px] items-center'>
                         <IconRender src={item.icon} className={"text-[30px]"} />
-                        <Link href={""}><h3 className='capitalize text-heading--400'>{item.name}</h3></Link>
+                        <Link href={item.link}><h3 className='capitalize text-heading--400'>{item.name}</h3></Link>
                     </div>
                 </div>
             ))}

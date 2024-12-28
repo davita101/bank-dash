@@ -20,7 +20,7 @@ export default function RootLayout({
                             <header className="sm:px-[20px] px-[25px] bg-white">
                                 <Header />
                             </header>
-                            <main className="sm:px-[20px] px-[15px]">
+                            <main className="sm:px-[20px] px-[15px] ">
                                 {children}
                             </main>
                         </div>

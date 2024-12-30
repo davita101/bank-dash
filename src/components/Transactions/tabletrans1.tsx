@@ -62,7 +62,7 @@ import {
   
   export function TableDemo() {
     return (
-      <Table >
+      <Table className="bg-white rounded-xl">
         <TableHeader>
           <TableRow>
             <TableHead className="text-body--100 text-primary--700">Description</TableHead>
@@ -71,7 +71,6 @@ import {
             <TableHead className="text-body--100 text-primary--700">Card</TableHead>
             <TableHead className="text-body--100 text-primary--700">Date</TableHead>
             <TableHead className="text-body--100 text-primary--700">Amount</TableHead>
-            
             <TableHead className="text-body--100 text-primary--700">Reciept</TableHead>
           </TableRow>
         </TableHeader>
@@ -84,7 +83,7 @@ import {
               <TableCell>{invoice.cardCode}</TableCell>
               <TableCell>{invoice.Date}</TableCell>
               <TableCell className="">{invoice.totalAmount}</TableCell>
-              <TableCell className=""><button className="'w-[10px] h-[35px] border   flex justify-center items-center  border-primary--014  hover:border-primary--013  text-primary--014 hover:text-primary--013 rounded-[50px] cursor-pointer">{invoice.DownloadButton}</button></TableCell>
+              <TableCell className=""><button className=" px-[15px] py-[8px] border flex justify-center items-center  border-primary--014  hover:border-primary--013  text-primary--014 hover:text-primary--013 rounded-[50px] cursor-pointer">{invoice.DownloadButton}</button></TableCell>
             </TableRow>
           ))}
         </TableBody>

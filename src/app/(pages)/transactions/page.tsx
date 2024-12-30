@@ -17,7 +17,7 @@ function page() {
                     <h2 className="text-heading--200 font-semibold text-primary--200">My Expense</h2>
                     <Expense />
                 </div>
-                <div className=" rounded-xl md:col-span-2 col-span-2" >
+                <div className=" rounded-xl md:col-span-3 sm:col-span-2 col-span-1" >
                     <h2 className="text-heading--200 font-semibold text-primary--200">Recent Transactions</h2>
 
                     {/* <Tabletrans /> */}

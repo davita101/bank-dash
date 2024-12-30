@@ -1,6 +1,7 @@
 import Recent from '@/components/Dashboard/recent'
 import { Expense } from '@/components/Transactions/expense'
 import Tabletrans from '@/components/Transactions/Tabletrans'
+import { TableDemo } from '@/components/Transactions/tabletrans1'
 import { Description } from '@radix-ui/react-dialog'
 import { Table } from 'lucide-react'
 import React from 'react'
@@ -19,7 +20,8 @@ function page() {
                 <div className=" rounded-xl md:col-span-2 col-span-2" >
                     <h2 className="text-heading--200 font-semibold text-primary--200">Recent Transactions</h2>
 
-                    <Tabletrans />
+                    {/* <Tabletrans /> */}
+                    <TableDemo />
                 </div>
             </div>
             <div className="grid  gap-[1rem] grid-cols-1 md:grid-cols-5">
